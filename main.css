@@ -1,0 +1,87 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --VeryPaleBlue: hsl(207, 100%, 98%);
+    --FontHeader:font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    font-size: 1rem;
+    color:var(--VeryDarkCyan);
+   background-color: var(--VeryPaleBlue);
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+}
+nav img{
+    height: 1.2em;
+}
+.hero{
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4em 2em;
+}
+.hero p{
+    margin: 2em 0;
+}
+
+.hero h1{
+    font-family: var(--FontHeader);
+    text-transform: capitalize;
+    font-size: 1.8em;
+}
+.hero img{
+    width: 100%; 
+    margin-top: 6em;
+}
+.reasons {
+    box-sizing: border-box;
+    width: 100vw;
+}
+.reason img{
+    width: 100%;
+}
+/*Estilos de componentes*/
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: .8em;
+    padding: .5em 1.5em;
+    background-color: transparent;
+    border: 1.2px solid black;
+    border-radius: calc(2em + 1rem / 2);
+    -webkit-border-radius: calc(2em + 1rem / 2);
+    -moz-border-radius: calc(2em + 1rem / 2);
+    -ms-border-radius: calc(2em + 1rem / 2);
+    -o-border-radius: calc(2em + 1rem / 2);
+}
+.ghost{
+    color:var(--Pink);
+    border-color: var(--Pink);
+}
+.action{
+    background-color: var(--Pink);
+    color:white;
+    border-color: var(--Pink);
+    padding: 1em 3.2em;
+    box-shadow: -2px 2px 5px 1px rgba(0,0,0,.1);
+
+}
