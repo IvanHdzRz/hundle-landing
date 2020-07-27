@@ -12,10 +12,10 @@ body{
     margin: 0;
     font-size: 1rem;
     color:var(--VeryDarkCyan);
-   background-color: var(--VeryPaleBlue);
+   background-color:white;
     box-sizing: border-box;
 }
-
+/*estilos de navegacion*/
 nav{
     width: 100vw;
     display: flex;
@@ -27,6 +27,7 @@ nav{
 nav img{
     height: 1.2em;
 }
+/*estilos del hero*/
 .hero{
     width: 100vw;
     box-sizing: border-box;
@@ -39,6 +40,7 @@ nav img{
 }
 .hero p{
     margin: 2em 0;
+    
 }
 
 .hero h1{
@@ -50,13 +52,71 @@ nav img{
     width: 100%; 
     margin-top: 6em;
 }
+/*estilos de seccion logros*/
+.awards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.award{
+    min-width: 310px;
+    max-width: 360px;
+    width: 50vw;
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas:
+    'img'
+    'number'
+    'description'
+    ;
+    justify-items: flex-start;
+    margin: 1em 0;
+    padding: 2.1em;
+    box-sizing: border-box;
+}
+.award img{
+    height: 2em;
+    grid-area: img;
+    justify-self: flex-start;
+}
+.award h2{
+    grid-area: number;
+    font-size: 5em;
+    margin: .1em;
+}
+.award p{
+    grid-area: description;
+    margin: 0;
+    justify-self: center;
+    color: gray;
+    font-size: 1.3em;
+}
+/*estilos seccion reasos*/
 .reasons {
     box-sizing: border-box;
     width: 100vw;
+    text-align: center;
+    
+}
+.reason{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    padding: 6rem 0;
 }
 .reason img{
     width: 100%;
+    grid-row: 1/2;
 }
+.reason:nth-child(odd){
+    
+    background-image:linear-gradient(var(--VeryPaleBlue),var(--VeryPaleBlue)), url(./images/bg-section-top-mobile-1.svg), url(./images/bg-section-bottom-mobile-1.svg);
+    background-clip: content-box, padding-box,padding-box;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:center,0%,80%;
+    background-size: contain;    
+}
+
 /*Estilos de componentes*/
 .btn{
     display: flex;
